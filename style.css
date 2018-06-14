@@ -9,15 +9,21 @@ h1, h2, p {
   margin: 0 auto;
   background-color: yellow; }
   #container #header {
-    padding: 1em 0;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #ccc; }
+    width: 100%; }
     #container #header #gnavi {
       background-color: orange;
       text-align: center; }
       #container #header #gnavi > div {
         display: inline-block; }
+        #container #header #gnavi > div ul {
+          padding: 0 1em; }
+          #container #header #gnavi > div ul li {
+            display: inline-block;
+            padding: 0 1em; }
+      #container #header #gnavi #logo {
+        padding: 1em 0; }
+        #container #header #gnavi #logo img {
+          max-width: 120px; }
   #container #main-image {
     width: 100%;
     padding-bottom: 1em; }
