@@ -16,6 +16,10 @@ h1,h2,p {
 		background-color: #ccc;
 		#gnavi {
 			background-color: orange;
+			text-align:center;
+			> div {
+				display: inline-block;
+			}
 		}
 	}
 	#main-image {
