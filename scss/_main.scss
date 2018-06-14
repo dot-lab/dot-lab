@@ -8,30 +8,32 @@ h2 {
 
 }
 p {
-
+	margin:0;
 }
 ul {
 }
 
 #container {
-	width: 95%;
+	width: 100%;
 	margin: 0 auto;
 	background-color: yellow;
 	#header {
-		width: 95%;
+		padding: 1em 0;
+		width: 100%;
 		margin: 0 auto;
 		background-color: #ccc;
 		#gnavi {
 			background-color: orange;
 		}
-		#main-image {
+	}
+	#main-image {
 			margin: 0 auto;
 			text-align: center;
-			width: 70%;
+			width: 100%;
+			display: block;
 			padding-bottom: 1em;
 			img {
-				width: 100%;
-			}
+			width: 100%;
 		}
 	}
 	#main-area {
@@ -50,7 +52,9 @@ ul {
 		}
 	}
 	#footer {
+		width: 100%;
 		background-color: red;
+		margin-top: 1em;
 		p {
 			text-align: center;
 			padding: 1em;

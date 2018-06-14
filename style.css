@@ -4,23 +4,28 @@ body {
 h1 {
   margin: 0; }
 
+p {
+  margin: 0; }
+
 #container {
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
   background-color: yellow; }
   #container #header {
-    width: 95%;
+    padding: 1em 0;
+    width: 100%;
     margin: 0 auto;
     background-color: #ccc; }
     #container #header #gnavi {
       background-color: orange; }
-    #container #header #main-image {
-      margin: 0 auto;
-      text-align: center;
-      width: 70%;
-      padding-bottom: 1em; }
-      #container #header #main-image img {
-        width: 100%; }
+  #container #main-image {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding-bottom: 1em; }
+    #container #main-image img {
+      width: 100%; }
   #container #main-area {
     width: 95%;
     margin: 0 auto;
@@ -33,7 +38,9 @@ h1 {
         max-width: 210px;
         width: 100%; }
   #container #footer {
-    background-color: red; }
+    width: 100%;
+    background-color: red;
+    margin-top: 1em; }
     #container #footer p {
       text-align: center;
       padding: 1em; }
