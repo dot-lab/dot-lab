@@ -37,7 +37,8 @@ h2 {
     #container #main-image img {
       width: 100%; }
   #container #main-area {
-    width: 95%;
+    width: 90%;
+    padding: 1em;
     margin: 0 auto;
     background-color: green; }
     #container #main-area #page-info {
