@@ -6,12 +6,23 @@
 	<title>.lab</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="stylesheet" type="text/css" href="./lib/swipebox.css">
+	<link rel="stylesheet" type="text/css" href="./lib/slick.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 	<script type="text/javascript" src="./lib/jquery.swipebox.js"></script>
+	<script type="text/javascript" src="./lib/slick.min.js"></script>
 	<script type="text/javascript">
 		;( function( $ ) {
 			$( '.swipebox' ).swipebox();
 		} )( jQuery );
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slide-show').slick({
+				autoplay: true,
+				arrows: false,
+				autoplaySpeed: 3500
+			});
+		});
 	</script>
 </head>
 <body>
@@ -38,7 +49,10 @@
 			</div>
 		</div>
 		<div id="main-image">
-			<img src="./images/main-image.png">
+			<div class="slide-show">
+				<img src="./images/main-image.png">
+				<img src="./images/main-image.png">
+			</div>
 		</div>
 		<div id="main-area">
 			<div id="page-info">
