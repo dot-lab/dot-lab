@@ -6,7 +6,8 @@
 基本的なWordPressテンプレートと,デザインの元になっているhtmlファイル,画像が同梱されています
 
 ## 外部ファイル
-同梱はしていませんが,jQueryプラグインの[swipebox](http://brutaldesign.github.io/swipebox/)を使用しています
-
+同梱はしていませんがjQueryプラグインをいくつか使用しています
+- [swipebox](http://brutaldesign.github.io/swipebox/)
+- [slick](http://kenwheeler.github.io/slick/)
 
 
