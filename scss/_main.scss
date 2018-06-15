@@ -42,7 +42,6 @@ h2 {
 	}
 	#main-image {
 			width: 100%;
-			padding-bottom: 1em;
 			img {
 			width: 100%;
 		}
@@ -50,7 +49,7 @@ h2 {
 	#main-area {
 		width: 90%;
 		padding: 1em;
-		margin: 0 auto;
+		margin: 1em auto 0;
 		background-color: green;
 		#page-info {
 			padding: 0.5em;
