@@ -5,7 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>.lab</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./lib/swipebox.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery.swipebox.js"></script>
+	<script type="text/javascript">
+		;( function( $ ) {
+			$( '.swipebox' ).swipebox();
+		} )( jQuery );
+	</script>
 </head>
 <body>
 	<div id="container">
@@ -43,7 +50,9 @@
 				<p>管理人が今までに開発したアプリ・描いたイラストなどを紹介するポートフォリオサイトです。</p>
 				<p>ブログ,日記なども書いています。お問い合わせなどは「Contact」からどうぞ。</p>
 				<h3>About master</h3>
-				<img src="./images/master.jpg" class="fl mr20">
+				<a href="./images/master.jpg" class="swipebox" title="master">
+					<img src="./images/master.jpg" class="fl mr20">
+				</a>
 				<p>Yoshie Takeda（a.k.a. 冷ややっこ）： 兵庫県在住</p>
 				<p>
 					スキル...<br>
