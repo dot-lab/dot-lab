@@ -7,6 +7,8 @@
 
 ## 外部ファイル
 同梱はしていませんがjQueryプラグインをいくつか使用しています
+
+"./lib" 以下に配置することで使えるようになるはず
 - [swipebox](http://brutaldesign.github.io/swipebox/)
 - [slick](http://kenwheeler.github.io/slick/)
 
