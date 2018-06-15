@@ -46,8 +46,9 @@ h2 {
           max-width: 120px; }
   #container #main-image {
     width: 100%; }
-    #container #main-image img {
-      width: 100%; }
+    #container #main-image .slide-show {
+      width: 60%;
+      margin: 0 auto; }
   #container #main-area {
     width: 90%;
     padding: 1em;
