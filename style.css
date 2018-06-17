@@ -10,60 +10,237 @@
 .mr20 {
   margin-right: 20px; }
 
+.mt10 {
+  margin-top: 10px; }
+
+.tac {
+  text-align: center; }
+
+.bdr-none:hover {
+  border-bottom: 0px; }
+
+.eyecatch {
+  border: 1px solid #ccc; }
+
 body {
   margin: 0; }
 
-h1, h2, p {
+h1, h2, h3, h4 {
   margin: 0; }
 
+a {
+  color: #d87171;
+  text-decoration: none; }
+  a:hover {
+    border-bottom: 2px dashed #d87171; }
+
 h1 {
-  text-align: center; }
+  position: relative;
+  margin-bottom: 1em; }
+  h1:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black; }
 
 h2 {
   font-weight: normal;
-  text-align: center; }
+  color: black;
+  font-size: 1.2em;
+  line-height: 1.4;
+  padding: 0.25em 1em;
+  top: 0;
+  position: relative;
+  display: inline-block; }
+  h2:before, h2:after {
+    position: absolute;
+    top: 0;
+    content: '';
+    width: 8px;
+    height: 100%;
+    display: inline-block; }
+  h2:before {
+    border-left: 2px solid #d87171;
+    border-top: 2px solid #d87171;
+    border-bottom: 2px solid #d87171;
+    left: 0; }
+  h2:after {
+    border-right: 2px solid #d87171;
+    border-top: 2px solid #d87171;
+    border-bottom: 2px solid #d87171;
+    right: 0; }
+
+h3 {
+  margin: 1em 0 0.5em;
+  font-weight: normal;
+  background: linear-gradient(transparent 60%, #d87171 60%);
+  width: 25%;
+  padding-left: 0.2em; }
+  h3.side-title {
+    margin: 0;
+    width: 70%; }
+  h3.product-title {
+    width: 90%; }
+
+h4 {
+  margin: 0.5em 1em 0 0;
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  z-index: 1; }
+  h4:before {
+    content: "";
+    position: absolute;
+    background: #d87171;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 50%;
+    left: -7px;
+    transform: translateY(-50%);
+    z-index: -1; }
+
+p {
+  line-height: 2em;
+  margin: 0;
+  margin-left: 0.5em; }
+
+.contactform {
+  margin-left: 1em;
+  margin-top: 1em; }
+  .contactform label {
+    display: block; }
+  .contactform input, .contactform textarea {
+    border: 1px solid #d87171;
+    border-style: inset; }
+  .contactform .wpcf7-submit {
+    background: #d87171;
+    border-color: #000;
+    border-style: solid; }
+
+.slick-dots {
+  text-align: center;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 1em;
+  padding-left: 0; }
+  .slick-dots li {
+    display: inline-block;
+    padding: 0.5em; }
+    .slick-dots li button {
+      border: none;
+      background: #78ce69;
+      color: #78ce69;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%; }
+    .slick-dots li.slick-active button {
+      color: #d87171;
+      background: #d87171; }
 
 #container {
   width: 100%;
   margin: 0 auto;
-  background-color: yellow; }
+  background: url("./images/bg.png"); }
   #container #header {
     width: 100%;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    background-color: rgba(225, 225, 225, 0.7); }
     #container #header #gnavi {
-      background-color: orange;
+      width: 40%;
+      margin: 0 auto;
       text-align: center; }
-      #container #header #gnavi > div {
-        display: inline-block; }
-        #container #header #gnavi > div ul {
-          padding: 0 1em; }
-          #container #header #gnavi > div ul li {
-            display: inline-block;
-            padding: 0 1em; }
+      #container #header #gnavi .bdr-none:hover {
+        border-bottom: 0px; }
+      #container #header #gnavi a {
+        color: #78ce69; }
+        #container #header #gnavi a:hover {
+          border-bottom: #78ce69 dashed 2px; }
+      #container #header #gnavi ul {
+        font-size: 1.2em;
+        padding: 0;
+        margin: 1em 0 0; }
+        #container #header #gnavi ul li {
+          display: inline-block;
+          width: 20%;
+          margin-bottom: 1em; }
       #container #header #gnavi #logo {
-        padding: 1em 0; }
+        padding: 1em 0 0; }
         #container #header #gnavi #logo img {
-          max-width: 120px; }
+          max-width: 100px; }
   #container #main-image {
     width: 100%; }
     #container #main-image .slide-show {
-      width: 60%;
+      width: 40%;
       margin: 0 auto; }
+      #container #main-image .slide-show img {
+        border-radius: 10px; }
   #container #main-area {
     width: 90%;
     padding: 1em;
     margin: 1em auto 0;
-    background-color: green; }
+    background-color: rgba(152, 225, 139, 0.3); }
     #container #main-area #page-info {
-      padding: 0.5em; }
+      padding: 0.5em;
+      text-align: center;
+      margin-bottom: 1em; }
     #container #main-area #content {
       padding: 0.5em; }
       #container #main-area #content img {
         max-width: 210px;
         width: 100%; }
+      #container #main-area #content ul {
+        list-style-type: none;
+        padding-left: 1em; }
+        #container #main-area #content ul li:before {
+          content: '*';
+          margin-right: 0.5em; }
+      #container #main-area #content #side {
+        float: left;
+        width: 20%;
+        padding: 1em;
+        padding-top: 0.5em; }
+      #container #main-area #content #blog-area {
+        float: left;
+        width: 75%;
+        margin-bottom: 1em; }
+        #container #main-area #content #blog-area .post .post-meta span {
+          font-size: 0.8em; }
+        #container #main-area #content #blog-area .post .post-content {
+          margin-bottom: 1em;
+          padding-left: 1em; }
+          #container #main-area #content #blog-area .post .post-content p {
+            line-height: 1.5em; }
+      #container #main-area #content #pager {
+        clear: both;
+        text-align: center; }
+      #container #main-area #content .product {
+        margin-left: 1em;
+        display: inline-block; }
+        #container #main-area #content .product .product-cat {
+          font-size: 0.8em; }
+        #container #main-area #content .product .product-title {
+          font-weight: bold; }
+        #container #main-area #content .product span {
+          display: block;
+          text-align: center; }
+      #container #main-area #content #product-single .execute-link {
+        text-align: center; }
+      #container #main-area #content #product-single .product-info, #container #main-area #content #product-single .description {
+        float: left; }
+      #container #main-area #content #product-single .description {
+        margin-left: 2em; }
+      #container #main-area #content #product-single img {
+        display: block;
+        margin: 0 auto; }
   #container #footer {
     width: 100%;
-    background-color: red;
+    background-color: rgba(225, 225, 225, 0.5);
     margin-top: 1em; }
     #container #footer p {
       text-align: center;

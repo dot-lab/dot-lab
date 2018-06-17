@@ -10,3 +10,17 @@
 .mr20 {
 	margin-right: 20px;
 }
+.mt10 {
+	margin-top: 10px;
+}
+.tac {
+	text-align: center;
+}
+.bdr-none {
+	&:hover {
+		border-bottom: 0px;
+	}
+}
+.eyecatch {
+	border: 1px solid #ccc;
+}

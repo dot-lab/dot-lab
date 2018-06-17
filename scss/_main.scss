@@ -1,42 +1,40 @@
-body {
-	margin: 0;
-}
-h1,h2,p {
-	margin: 0;
-}
-
-h1 {
-	text-align: center;
-}
-h2 {
-	font-weight: normal;
-	text-align: center;
-}
-
 #container {
 	width: 100%;
 	margin: 0 auto;
-	background-color: yellow;
+	background: url('./images/bg.png');
 	#header {
 		width: 100%;
 		margin-bottom: 1em;
+		background-color: $header;
 		#gnavi {
-			background-color: orange;
+			width: 40%;
+			margin: 0 auto;
 			text-align:center;
-			> div {
-				display: inline-block;
-				ul {
-					padding: 0 1em;
-					li {
-						display: inline-block;
-						padding: 0 1em;
-					}
+			.bdr-none {
+				&:hover {
+					border-bottom: 0px;
+				}
+			}
+			a {
+				color: $gnavi;
+				&:hover {
+					border-bottom: $gnavi dashed 2px;
+				}
+			}
+			ul {
+				font-size: 1.2em;
+				padding: 0;
+				margin: 1em 0 0;
+				li {
+					display: inline-block;
+					width: 20%;
+					margin-bottom: 1em;
 				}
 			}
 			#logo {
-				padding: 1em 0;
+				padding: 1em 0 0;
 				img {
-					max-width: 120px;
+					max-width: 100px;
 				}
 			}
 		}
@@ -44,17 +42,22 @@ h2 {
 	#main-image {
 			width: 100%;
 			.slide-show {
-			width: 60%;
+			width: 40%;
 			margin: 0 auto;
+			img {
+				border-radius: 10px;
+			}
 		}
 	}
 	#main-area {
 		width: 90%;
 		padding: 1em;
 		margin: 1em auto 0;
-		background-color: green;
+		background-color: $main-area;
 		#page-info {
 			padding: 0.5em;
+			text-align: center;
+			margin-bottom: 1em;
 		}
 		#content {
 			padding: 0.5em;
@@ -62,11 +65,79 @@ h2 {
 				max-width: 210px;
 				width: 100%;
 			}
+			ul {
+				list-style-type: none;
+				padding-left: 1em;
+				li {
+					&:before {
+						content: '*';
+						margin-right: 0.5em;
+					}
+				}
+			}
+			#side {
+				float: left;
+				width: 20%;
+				padding: 1em;
+				padding-top: 0.5em;
+			}
+			#blog-area {
+				float: left;
+				width: 75%;
+				margin-bottom: 1em;
+				.post {
+					.post-meta {
+						span {
+							font-size: 0.8em;
+						}
+					}
+					.post-content {
+						margin-bottom: 1em;
+						padding-left: 1em;
+						p {
+							line-height: 1.5em;
+						}
+					}
+				}
+			}
+			#pager {
+				clear: both;
+				text-align: center;
+			}
+			.product {
+				margin-left: 1em;
+				display: inline-block;
+				.product-cat {
+					font-size: 0.8em;
+				}
+				.product-title {
+					font-weight: bold;
+				}
+				span {
+					display: block;
+					text-align: center;
+				}
+			}
+			#product-single {
+				.execute-link {
+					text-align: center;
+				}
+				.product-info,.description {
+					float: left;
+				}
+				.description {
+					margin-left:2em;
+				}
+				img {
+					display: block;
+					margin: 0 auto;
+				}
+			}
 		}
 	}
 	#footer {
 		width: 100%;
-		background-color: red;
+		background-color: $footer;
 		margin-top: 1em;
 		p {
 			text-align: center;

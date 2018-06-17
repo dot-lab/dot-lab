@@ -1,0 +1,25 @@
+.slick-dots {
+	text-align: center;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 1em;
+	padding-left: 0;
+	li {
+		display: inline-block;
+		padding: 0.5em;
+		button {
+	    border: none;
+	    background: $gnavi;
+	    color: $gnavi;
+	    width: 15px;
+    	height: 15px;
+    	border-radius: 50%;
+		}
+	&.slick-active {
+		button {
+			color: $accent;
+			background: $accent;
+			}
+		} 
+	}
+}

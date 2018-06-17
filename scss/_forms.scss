@@ -1,0 +1,16 @@
+.contactform {
+	margin-left: 1em;
+	margin-top: 1em;
+	label {
+		display: block;
+	}
+	input,textarea {
+		border: 1px solid $accent;
+		border-style: inset;
+	}
+	.wpcf7-submit {
+		background: $accent;
+		border-color: #000;
+		border-style: solid;
+	}
+}
