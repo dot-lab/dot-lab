@@ -6,22 +6,22 @@
 <?php get_header(); ?>
 		<div id="main-area">
 			<?php if ( have_posts() ) : ?>
-			<div class="page-info">
+			<div id="page-info">
 				<h1><?php echo get_the_title(); ?></h1>
 				<h2><?php echo get_post_meta( $post->ID,'desc',true ); ?></h2>
 			</div>
 			<div id="content">
 				<div id="side">
-					<h3>Category list</h3>
+					<h3 class="side-title">Category list</h3>
 					<ul>
-						<?php $categories = get_categories(); ?>
+						<?php $categories = get_categories('parent=0'); ?>
 						<?php
 						foreach ( $categories as $val ) :
 						$cat_link = get_category_link($val->cat_ID);
 						?>
 						<li>
-							<a href="<?php echo $cat_link; ?>">
-								<?php echo $val -> name; ?>
+							<a href="<?php echo $cat_link ?>">
+								<?php echo $val -> name ?>
 							</a>	
 						</li>
 						<?php endforeach; ?>
@@ -30,7 +30,7 @@
 				<div id="blog-area">
 					<?php 
 					$args = array (
-						'posts_per_page' => 3,
+						'posts_per_page' => 10,
 						'post_type' => 'post',
 						'paged' => $paged,
 					);
@@ -49,11 +49,11 @@
 					</div>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
-				<?php if ( function_exists('wp_pagenavi') ) ?>
+				<?php if ( function_exists('wp_pagenavi') ) : ?>
 				<div id="pager">
 					<?php wp_pagenavi(); ?>
 				</div>
-				<?php endif;?>
+				<?php endif; ?>
 			</div>
 			<?php else : ?>
 			<div id="page-info">
