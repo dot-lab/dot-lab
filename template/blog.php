@@ -26,6 +26,12 @@
 						</li>
 						<?php endforeach; ?>
 					</ul>
+					<?php /*  月別アーカイブ ?>
+					<h3 class="side-title">Monthly archives</h3>
+					<ul>
+						<?php wp_get_archives(); ?>
+					</ul>
+					<?php */ ?>
 				</div>
 				<div id="blog-area">
 					<?php 
