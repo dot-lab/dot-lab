@@ -3,17 +3,11 @@
 [.lab](http://dot-lab.xyz/)のWordPressカスタムテーマです
 
 ## 中身
-WordPressのカスタムテーマと使用した画像が同梱されています
+WordPressのカスタムテーマと,スライドショーなどに使用した画像が同梱されています
 
 ## 外部ライブラリ
-jQueryライブラリをいくつか使用しています
-
-""lib/""以下に配置しています
-
-ありがとうございます
+jQueryライブラリをいくつか使用しています,ありがとうございます
+「lib」フォルダ以下に配置しています
 
 - [swipebox](http://brutaldesign.github.io/swipebox/)
 - [slick](http://kenwheeler.github.io/slick/)
-
-
-
