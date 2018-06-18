@@ -85,7 +85,8 @@ h3 {
     margin: 0;
     width: 70%; }
   h3.product-title {
-    width: 90%; }
+    width: 90%;
+    margin-top: 0; }
 
 h4 {
   margin: 0.5em 1em 0 0;
@@ -221,6 +222,7 @@ p {
         text-align: center; }
       #container #main-area #content .product {
         margin-left: 1em;
+        text-align: center;
         display: inline-block; }
         #container #main-area #content .product .product-cat {
           font-size: 0.8em; }
@@ -229,10 +231,12 @@ p {
         #container #main-area #content .product span {
           display: block;
           text-align: center; }
-      #container #main-area #content #product-single .execute-link {
+      #container #main-area #content #product-single .execute-link, #container #main-area #content #product-single .github-link {
         text-align: center; }
       #container #main-area #content #product-single .product-info, #container #main-area #content #product-single .description {
         float: left; }
+      #container #main-area #content #product-single .product-info {
+        margin-top: 1em; }
       #container #main-area #content #product-single .description {
         margin-left: 2em; }
       #container #main-area #content #product-single img {

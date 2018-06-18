@@ -106,6 +106,7 @@
 			}
 			.product {
 				margin-left: 1em;
+				text-align: center;
 				display: inline-block;
 				.product-cat {
 					font-size: 0.8em;
@@ -119,11 +120,14 @@
 				}
 			}
 			#product-single {
-				.execute-link {
+				.execute-link,.github-link {
 					text-align: center;
 				}
 				.product-info,.description {
 					float: left;
+				}
+				.product-info {
+					margin-top: 1em;
 				}
 				.description {
 					margin-left:2em;
