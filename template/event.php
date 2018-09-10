@@ -1,6 +1,6 @@
 <?php
 /*
-	Template Name: products template
+	Template Name: event template
 */
 ?>
 <?php get_header();?>
@@ -15,21 +15,24 @@
 					<?php
 					$args = array (
 						'posts_per_page' => -1,
-						'post_type' => 'product',
+						'post_type' => 'event',
 					);
 					$posts = get_posts( $args );
 					?>
 					<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
 						<div class="product">
 							<a href="<?php echo get_permalink(); ?>" class="bdr-none">
-								<img src="<?php echo get_field('eyecatch'); ?>" class="eyecatch">
-								<span class="product-title"><?php echo get_field('title');?></span>
+								<img src="<?php echo get_field('eyecatch_event'); ?>" class="eyecatch">
+								<span><?php echo get_field('event_title') ?></span>
 							</a>
-							<span class="product-cat"><?php echo get_field('category');?></span>
+							<p>
+								<span><?php echo get_field('date') ?></span>
+								<span><?php echo get_field('event_name') ?></span>
+							</p>
 						</div>
 					<?php endforeach; wp_reset_postdata(); ?>
 				</div>
-				<?php endwhile;?>
+				<?php endwhile; ?>
 				<?php else : ?>
 					<div id="page-info">
 						<h1>Not found</h1>

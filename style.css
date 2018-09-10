@@ -168,7 +168,7 @@ p {
         margin: 1em 0 0; }
         #container #header #gnavi ul li {
           display: inline-block;
-          width: 20%;
+          width: 15%;
           margin-bottom: 1em; }
       #container #header #gnavi #logo {
         padding: 1em 0 0; }
@@ -217,9 +217,6 @@ p {
           padding-left: 1em; }
           #container #main-area #content #blog-area .post .post-content p {
             line-height: 1.5em; }
-      #container #main-area #content #pager {
-        clear: both;
-        text-align: center; }
       #container #main-area #content .product {
         margin-left: 1em;
         text-align: center;
@@ -242,6 +239,9 @@ p {
       #container #main-area #content #product-single img {
         display: block;
         margin: 0 auto; }
+    #container #main-area #pager {
+      clear: both;
+      text-align: center; }
   #container #footer {
     width: 100%;
     background-color: rgba(225, 225, 225, 0.5);

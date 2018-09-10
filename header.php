@@ -40,19 +40,11 @@
 				</div>
 				<ul>
 					<li><a href="<?php echo home_url('/'); ?>products">Products</a></li>
+					<li><a href="<?php echo home_url('/'); ?>event">Event</a></li>
 					<li><a href="<?php echo home_url('/'); ?>works">Works</a></li>
 					<li><a href="<?php echo home_url('/'); ?>blog">Blog</a></li>
 					<li><a href="<?php echo home_url('/'); ?>contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
-		<?php # フロントページ（hello,world）なら,スライドショーを表示 ?>
-		<?php if ( is_page('9') ) : ?>
-		<div id="main-image">
-			<div class="slide-show">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/01.jpg">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/02.jpg">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/03.jpg">
-			</div>
-		</div>
-		<?php endif;?>
+	
