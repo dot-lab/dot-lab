@@ -28,7 +28,7 @@
 							if ( $github ) :
 							?>
 							<p class="github-link">
-								<a href="<?php get_field('github'); ?>" target="_blank">ソースコード（GitHub）</a>
+								<a href="<?php echo $github; ?>" target="_blank">ソースコード（GitHub）</a>
 							</p>
 							<?php endif;?>
 						</div>
